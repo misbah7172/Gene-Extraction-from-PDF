@@ -1,0 +1,21 @@
+{
+  "TP53": ["P53", "TRP53"],
+  "EGFR": ["ERBB1"],
+  "ERBB2": ["HER2", "NEU"],
+  "BRCA1": ["RNF53"],
+  "BRCA2": ["FAD", "FAD1"],
+  "MYC": ["C-MYC", "CMYC"],
+  "KRAS": ["K-RAS", "RASK"],
+  "NRAS": ["N-RAS"],
+  "HRAS": ["H-RAS"],
+  "MTOR": ["FRAP1"],
+  "CDKN1A": ["P21", "WAF1"],
+  "CDKN2A": ["P16", "INK4A"],
+  "APOE": ["APO-E"],
+  "TNF": ["TNFA", "TNF-ALPHA"],
+  "IL6": ["IL-6"],
+  "VEGFA": ["VEGF"],
+  "AKT1": ["PKB"],
+  "MAPK1": ["ERK2"],
+  "MAPK3": ["ERK1"]
+}

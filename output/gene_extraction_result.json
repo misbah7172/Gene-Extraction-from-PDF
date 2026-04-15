@@ -1,0 +1,854 @@
+{
+  "clean_text_length": 97518,
+  "sections": {
+    "other": 4795,
+    "introduction": 6478,
+    "methods": 32432,
+    "results": 8056,
+    "discussion": 45713
+  },
+  "sentence_count": 364,
+  "candidates_considered": 37,
+  "accepted_genes": [],
+  "rejected_candidates": [
+    {
+      "token": "USA",
+      "canonical_token": "USA",
+      "frequency": 6,
+      "context_score": 5.7,
+      "relation_hits": 0,
+      "section_diversity": 3,
+      "biomedical_score": 2.15,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 18.95,
+      "accepted": false,
+      "section_mentions": {
+        "other": 1,
+        "introduction": 2,
+        "discussion": 2
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "CDC",
+      "canonical_token": "CDC",
+      "frequency": 3,
+      "context_score": 4.7,
+      "relation_hits": 0,
+      "section_diversity": 2,
+      "biomedical_score": 2.2,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 17.2,
+      "accepted": false,
+      "section_mentions": {
+        "introduction": 1,
+        "discussion": 2
+      },
+      "example_sentence": "At first glance, this finding seems to contrast with other estimates such as those from Cassini and colleagues or the CDC, who have estimated the burden of carbapenem-resistant A baumannii to be substantially lower than that of third-generation cephalosporin-resistant E coli."
+    },
+    {
+      "token": "XDR",
+      "canonical_token": "XDR",
+      "frequency": 10,
+      "context_score": 4.22,
+      "relation_hits": 0,
+      "section_diversity": 3,
+      "biomedical_score": 2.1,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 16.42,
+      "accepted": false,
+      "section_mentions": {
+        "methods": 1,
+        "results": 2,
+        "discussion": 5
+      },
+      "example_sentence": "Six more pathogen drug combinations each caused between 50 000 and 100 000 resistance-attributable deaths in 2019: MDR excluding XDR tuberculosis, third- generation cephalosporin-resistant E coli, carbapenem- resistant A baumannii, fluoroquinolone-resistant E coli, carbapenem-resistant K pneumoniae , and third-genera - tion cephalosporin-resistant K pneumoniae (figure 6)."
+    },
+    {
+      "token": "MPH",
+      "canonical_token": "MPH",
+      "frequency": 8,
+      "context_score": 3.7,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 14.2,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "FRCP",
+      "canonical_token": "FRCP",
+      "frequency": 5,
+      "context_score": 3.7,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 14.2,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "MBBS",
+      "canonical_token": "MBBS",
+      "frequency": 3,
+      "context_score": 3.7,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 14.2,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "ECDC",
+      "canonical_token": "ECDC",
+      "frequency": 2,
+      "context_score": 2.6,
+      "relation_hits": 0,
+      "section_diversity": 2,
+      "biomedical_score": 2.2,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 14.1,
+      "accepted": false,
+      "section_mentions": {
+        "methods": 1,
+        "discussion": 1
+      },
+      "example_sentence": "6,10 When assessed by super- region, however, our results are much more consistent with the published literature: similar to the CDC and ECDC, we found the burden of third-generation cephalosporin-resistant E coli to exceed that of carbapenem-resistant A baumannii in high-income settings, whereas the inverse pattern was found in south Asia, where a higher relative burden of carbapenem- resistant A baumannii than that in high-income regions has been documented."
+    },
+    {
+      "token": "UK",
+      "canonical_token": "UK",
+      "frequency": 6,
+      "context_score": 4.7,
+      "relation_hits": 0,
+      "section_diversity": 2,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 14.0,
+      "accepted": false,
+      "section_mentions": {
+        "introduction": 1,
+        "discussion": 2
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "WA",
+      "canonical_token": "WA",
+      "frequency": 2,
+      "context_score": 4.2,
+      "relation_hits": 0,
+      "section_diversity": 2,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 13.5,
+      "accepted": false,
+      "section_mentions": {
+        "other": 1,
+        "discussion": 1
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "MDR",
+      "canonical_token": "MDR",
+      "frequency": 11,
+      "context_score": 0.1,
+      "relation_hits": 0,
+      "section_diversity": 3,
+      "biomedical_score": 2.15,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 13.35,
+      "accepted": false,
+      "section_mentions": {
+        "methods": 1,
+        "results": 2,
+        "discussion": 7
+      },
+      "example_sentence": "Six more pathogen drug combinations each caused between 50 000 and 100 000 resistance-attributable deaths in 2019: MDR excluding XDR tuberculosis, third- generation cephalosporin-resistant E coli, carbapenem- resistant A baumannii, fluoroquinolone-resistant E coli, carbapenem-resistant K pneumoniae , and third-genera - tion cephalosporin-resistant K pneumoniae (figure 6)."
+    },
+    {
+      "token": "KEMRI",
+      "canonical_token": "KEMRI",
+      "frequency": 2,
+      "context_score": 3.7,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 3.5,
+      "final_score": 13.2,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "COVID-19",
+      "canonical_token": "COVID-19",
+      "frequency": 2,
+      "context_score": 1.0,
+      "relation_hits": 0,
+      "section_diversity": 2,
+      "biomedical_score": 1.65,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.9,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 12.85,
+      "accepted": false,
+      "section_mentions": {
+        "methods": 1,
+        "discussion": 1
+      },
+      "example_sentence": "Given the many challenges to data collection and reporting caused by the COVID-19 pandemic, 32,33 as well as our collaborators process of data collation and cleaning, we were unable to collect more contemporary data; we assumed no change in prevalence of resistance for 2019."
+    },
+    {
+      "token": "WHO",
+      "canonical_token": "WHO",
+      "frequency": 9,
+      "context_score": -0.92,
+      "relation_hits": 0,
+      "section_diversity": 3,
+      "biomedical_score": 2.15,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 12.33,
+      "accepted": false,
+      "section_mentions": {
+        "introduction": 1,
+        "methods": 2,
+        "discussion": 5
+      },
+      "example_sentence": "1,2 Although these forecasts have been criticised by some, 3,4 WHO and numerous other groups and researchers agree that the spread of AMR is an urgent issue requiring a global, coordinated action plan to address."
+    },
+    {
+      "token": "BA",
+      "canonical_token": "BA",
+      "frequency": 3,
+      "context_score": 3.7,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 12.2,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "DM",
+      "canonical_token": "DM",
+      "frequency": 3,
+      "context_score": 3.7,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 12.2,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "MD",
+      "canonical_token": "MD",
+      "frequency": 24,
+      "context_score": 4.2,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 11.7,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 2
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "MS",
+      "canonical_token": "MS",
+      "frequency": 2,
+      "context_score": 3.7,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 11.2,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "BS",
+      "canonical_token": "BS",
+      "frequency": 5,
+      "context_score": 3.7,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 11.2,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "LSHTM",
+      "canonical_token": "LSHTM",
+      "frequency": 3,
+      "context_score": 0.5,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.15,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 11.15,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": "J Scott reports that the London School of Hygiene Tropical Medicine (LSHTM) received financial for the present manuscript; reports a paid fellowship from the Wellcome Trust, research grants from Gavi, the Vaccine Alliance, and NIHR paid to LSHTM, and an African research leader fellowship paid to LSHTM by the Medical Research Council, outside the submitted work; and reports being a member of the data safety and monitoring board for PATH Vaccines Solutions for SII PCV10 in The Gambia."
+    },
+    {
+      "token": "MRCGP",
+      "canonical_token": "MRCGP",
+      "frequency": 2,
+      "context_score": 3.7,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.0,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 1.0,
+      "final_score": 10.7,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": "Affiliations K S Ikuta MD, F Sharara MS, L Swetschinski MSc, A Gray BS, C Han BA, C Bisignano MPH, P Rao MPH, E Wool MPH, S C Johnson MSc, S Albertson BS, A Aravkin PhD, R Bender BS, M Cunningham MSc, Prof S I Hay FMedSci, H H Kyu PhD, J Ma MS, A Novotney MPH, A Vongpradith BA, P Zheng PhD, A Stergachis PhD) Medicine (Prof C J L Murray, A Aravkin, Prof S I Hay, B Sartorius, (A Stergachis), University of Washington, Seattle, WA, USA; F Fell MSc, N Fisher-Pearson BA, S Hackett PhD, G Haines-Woodhouse MRes, E Kobeissi MPH, E Kumaran MSc, M Lunn BSc, Prof M Mayxay PhD, B McManigal PhD, C E Moore DPhil, Medicine, Centre for Tropical Medicine and Global Health (E Ashley FRCPath, J A Berkley PhD, V Chansamouth MSc, B Cooper PhD, Prof C Dolecek FRCP, S Dunachie PhD, B Kashef Hamadani MPH, C Lim MSc, Prof D Limmathurotsakul PhD, P Newton FRCP, C Perrone MD, G Thwaites FMedSci, P Turner FRCPath, B Sartorius PhD, N Day DM, R Greer MRCGP, of Clinical Medicine (A J Simpson FRCPath, C Tigoi MSc), Ineos Oxford Oxford, Oxford, UK; Infection Control Unit (S Achalapong PhD), (P Ounchanum MD), Department of Internal Medicine (S Seekaew MD), Chiang Rai Prachanukroh Hospital, Chiang Rai, of Medical Sciences, New Delhi, India; Health Services Research Unit (S Akech PhD), Nairobi Programme (J Bukosia MSc), Kenya Medical Health and Infectious Diseases (J Amuasi), Kumasi Centre for Collaborative Research in Tropical Medicine, Kumasi, Ghana; (E Ashley FRCPath, V Chansamouth MSc, K Phommasone PhD, P Newton FRCP, S Rattanavong MD, T Roberts PhD, Vientiane, Laos; M\u00e9rieux Foundation, Lyon, France (F Babin PharmD); Therapeutic Immunology and Infectious Disease (CITIID) (F Marks PhD), University of Cambridge, Cambridge, UK; Oxford (J A Berkley, N Mturi MRCPCH, C Obiero MPH), Department of Biomedical Sciences (C Tigoi MSc), KEMRI - Wellcome Trust Research (A Bethou PhD, N Plakkal MD), Jawaharlal Institute of Postgraduate Medical Education Research, Puducherry, India; Paediatric Infectious Group (J Bielicki, A J Cook MSc, A Riddell PhD, N Russell MBBS), Ribeirao Preto, Brazil; Colombian National Health Observatory (C Casta\u00f1eda-Orjuela MD), Instituto Nacional de Salud, Bogota, Colombia; Epidemiology and Public Health Evaluation Group (C Casta\u00f1eda-Orjuela), Universidad Nacional de Colombia, (S Chiurchi\u00f9 MD), Academic Hospital Pediatric Department (M De Luca MD), Bambino Ges\u00f9 Children s Hospital, Rome, Italy; Clinical Research Unit (R Greer MRCGP, T Wangrangsimakul Prof D Limmathurotsakul PhD, N Tasak BNS, A Thaiprakong BS), Faculty of Tropical Medicine (N Day DM, C Perrone MD), Mahidol-Oxford Tropical Medicine Research Unit, Bangkok, Thailand (F Chowdhury PhD, Prof C Dolecek FRCP, P Wannapinij MIS); Laboratoire National de Biologie Clinique et de Sant\u00e9 Publique (National Laboratory of Clinical Biology and Public Health) (R Clotaire Donatien MD), Health Ministry of Central African Republic, Bangui, Central Facult\u00e9 des Sciences de la Sant\u00e9 (Faculty of Health Science), (A Olivas-Martinez MD, E Ortiz-Brizuela MSc), Department of Infectious Diseases (A Ponce-de-Leon MD), Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico; Articles www.thelancet.com Vol 399 February 12, 2022 653 Council Unit The Gambia at the London School of Hygiene Tropical Diseases, Ho Chi Minh City, Vietnam (T Duong Bich PhD); Infectious Disease Epidemiology (T Eckmanns PhD, S Haller MPH), Disease Epidemiology (D Eibach MD, R Krumkamp DrPH), J May MD, Sciences, Shiraz, Iran; Clinical Sciences (N Feasey PhD), Liverpool School of Tropical Medicine, Liverpool, UK; Malawi Liverpool Wellcome Trust Clinical Research Programme, Blantyre, Malawi (N Feasey); Instituto de Medicina Tropical Alexander von Humboldt (Alexander von Humboldt Institute of Tropical Medicine) (C Garcia PhD, F Krapp MSc, T Ochoa PhD, J Paredes MD), Universidad Peruana Departamento de Enfermedades Infecciosas, Tropicales y (Prof P Gastmeier MD), Charit\u00e9 University Medicine Berlin, (A Z Giref PhD), Addis Ababa University, Addis Ababa, Ethiopia; National Data Management Center (A Z Giref), Ethiopian Public Health (V Gupta PharmD), Becton, Dickinson and Company, Franklin Lakes, (A Haselbeck Dr rer medic, M Holm PhD), Epidemiology, Public Health, Seoul, South Korea; National Infection Service (S Hopkins FRCP), Antimicrobrial Resistance Division (J V Robotham PhD), Public Health England, London, UK; School of Pharmacy (Y Hsia PhD), Queen s (K C Iregbu MD), National Hospital, Abuja, Nigeria; Department of Immunology, and Transplantation (Prof J Jacobs), KU Leuven, (D Jarovsky MD), Santa Casa de S\u00e3o Paulo, S\u00e3o Paulo, Brazil; (A Jenney PhD, A Y Peleg, A J Stewardson), The Alfred Hospital, Infectious Diseases (M J Loftus MBBS, A Y Peleg PhD, KEMRI Wellcome Trust Research Programme, Kilifi, Kenya (E Ooko PhD); Research Department (A Manoharan PhD), The CHILDS Trust Medical Research Foundation, Chennai, India; Site Hamburg-Borstel-L\u00fcbeck-Riems (J May MD), German Center for Research and Educational Development (Prof M Mayxay PhD), (L A Musila PhD), United States Army Medical Research Directorate - Africa, Nairobi, Kenya; Center for Clinical Research (L A Musila PhD), Health, Suva, Fiji (R Naidu MMed, T E Young-Sharma MMed); (T Nakamura MSPH), World Health Organization, Geneva, Switzerland; (C Turner FRCPCH), Cambodia Oxford Medical Research Unit (P Turner), Angkor Hospital for Children, Siem Reap, Cambodia; (M Raad MD), International Operations Direction (N Steenkeste PhD), Infection Control Consortium (V Rosenthal MD), International Nosocomial Infections Control Consortium (INICC) Foundation, Microbiology and Surveillance (H S Sader MD), JMI Laboratories, North Liberty, IA, USA; Laboratory (W Saengchan BS), Chiang Rai (J Schnall MBBS), Austin Health, Heidelberg, VIC, Australia; (Prof J A G Scott FMedSci), London School of Hygiene Tropical (M Shivamallappa DM), King Edward Memorial Hospital Mumbai, Instituto Nactional de Ciencias Medicas, Mexico City, Mexico; (G Thwaites, H Vu PhD), University of Oxford, Ho Chi Minh City, Vietnam; Cambodia Oxford Medical Research Unit, Siem Reap, Hanoi, Vietnam (H R van Doorn); School of Clinical Medicine, Faculty (S Waner MMed), Lancet Laboratories, Johannesburg, South Africa; School of Health Research, Brisbane, QLD, Australia."
+    },
+    {
+      "token": "EU",
+      "canonical_token": "EU",
+      "frequency": 8,
+      "context_score": 1.08,
+      "relation_hits": 0,
+      "section_diversity": 2,
+      "biomedical_score": 2.15,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 10.53,
+      "accepted": false,
+      "section_mentions": {
+        "introduction": 2,
+        "discussion": 4
+      },
+      "example_sentence": "For instance, the US Centers for Disease Control and Prevention (CDC) published a 2019 report on AMR infections and deaths in the USA for 18 AMR threats using surveillance data, 6 while Cassini and colleagues 10 estimated the burden of eight bacterial pathogens and 16 pathogen drug combinations in the EU and European Economic Area for 2007 15."
+    },
+    {
+      "token": "MR-BRT",
+      "canonical_token": "MR-BRT",
+      "frequency": 3,
+      "context_score": -0.66,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.15,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.2,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 10.19,
+      "accepted": false,
+      "section_mentions": {
+        "methods": 3
+      },
+      "example_sentence": "Estimation steps eight and nine: relative risk of death for drug-resistant infection compared with drug- sensitive infections Using data from 164 sources representing 511 870 patients with known outcome and resistance information, we estimated the relative risk of death for each pathogen drug combination for a resistant infection compared with that of a drug-sensitive infection using MR-BRT."
+    },
+    {
+      "token": "HIV",
+      "canonical_token": "HIV",
+      "frequency": 4,
+      "context_score": -4.0,
+      "relation_hits": 0,
+      "section_diversity": 3,
+      "biomedical_score": 2.35,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 9.45,
+      "accepted": false,
+      "section_mentions": {
+        "introduction": 1,
+        "methods": 1,
+        "discussion": 2
+      },
+      "example_sentence": "Implications of all the available evidence Our estimates indicate that bacterial AMR is a health problem whose magnitude is at least as large as major diseases such as HIV and malaria, and potentially much larger."
+    },
+    {
+      "token": "CLSI",
+      "canonical_token": "CLSI",
+      "frequency": 2,
+      "context_score": -1.42,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.35,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 9.43,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 1
+      },
+      "example_sentence": ""
+    },
+    {
+      "token": "DALY",
+      "canonical_token": "DALY",
+      "frequency": 2,
+      "context_score": -1.88,
+      "relation_hits": 0,
+      "section_diversity": 2,
+      "biomedical_score": 1.9,
+      "biomedical_sources": [
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 8.82,
+      "accepted": false,
+      "section_mentions": {
+        "results": 1,
+        "discussion": 1
+      },
+      "example_sentence": "For the 11 pathogen drug combinations that overlap, Cassini and colleagues estimated approx - imately 30 000 deaths and 796 000 DALY s caused by resistance in the EU in 2015."
+    },
+    {
+      "token": "LRI",
+      "canonical_token": "LRI",
+      "frequency": 2,
+      "context_score": -3.08,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.35,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 8.77,
+      "accepted": false,
+      "section_mentions": {
+        "results": 2
+      },
+      "example_sentence": "LRI lower respiratory infections and all related infections in the thorax."
+    },
+    {
+      "token": "BSI",
+      "canonical_token": "BSI",
+      "frequency": 2,
+      "context_score": -3.08,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.35,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 8.77,
+      "accepted": false,
+      "section_mentions": {
+        "results": 2
+      },
+      "example_sentence": "BSI bloodstream infections."
+    },
+    {
+      "token": "UTI",
+      "canonical_token": "UTI",
+      "frequency": 2,
+      "context_score": -3.08,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.35,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 8.77,
+      "accepted": false,
+      "section_mentions": {
+        "results": 2
+      },
+      "example_sentence": "UTI urinary tract infections and pyelonephritis."
+    },
+    {
+      "token": "GBD",
+      "canonical_token": "GBD",
+      "frequency": 43,
+      "context_score": -5.98,
+      "relation_hits": 0,
+      "section_diversity": 3,
+      "biomedical_score": 2.35,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 7.47,
+      "accepted": false,
+      "section_mentions": {
+        "methods": 25,
+        "results": 4,
+        "discussion": 5
+      },
+      "example_sentence": "The data points listed in the sepsis and infectious syndrome models include only sources used to determine the fraction of sepsis in non-communicable diseases; maternal, neonatal, and nutritional diseases; and injuries, as well as the distribution of infectious syndromes; final estimates of the number of deaths in each infectious syndrome were generated by multiplying the fractions of sepsis and infection syndromes on GBD 2019 death estimates; GBD 2019 death estimates include 7417 sources with 28 106 location-y ears of data for under-5 mortality and 7355 sources with over 7322 location-years of data."
+    },
+    {
+      "token": "CNS",
+      "canonical_token": "CNS",
+      "frequency": 5,
+      "context_score": -5.32,
+      "relation_hits": 0,
+      "section_diversity": 2,
+      "biomedical_score": 2.35,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 7.33,
+      "accepted": false,
+      "section_mentions": {
+        "methods": 2,
+        "results": 2
+      },
+      "example_sentence": "CNS meningitis and other bacterial CNS infections."
+    },
+    {
+      "token": "PAF",
+      "canonical_token": "PAF",
+      "frequency": 7,
+      "context_score": -5.14,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.15,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 6.51,
+      "accepted": false,
+      "section_mentions": {
+        "methods": 7
+      },
+      "example_sentence": "The PAF represents the proportional reduction in deaths or years lived with disability (YLDs) that would occur if all infections with the resistance profile of interest were instead susceptible to all antibiotics included in the analysis."
+    },
+    {
+      "token": "TF",
+      "canonical_token": "TF",
+      "frequency": 2,
+      "context_score": -3.08,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.35,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": 5.77,
+      "accepted": false,
+      "section_mentions": {
+        "results": 2
+      },
+      "example_sentence": "TF PF iNTS typhoid fever, paratyphoid fever, and invasive non-typhoidal Salmonella spp."
+    },
+    {
+      "token": "RR",
+      "canonical_token": "RR",
+      "frequency": 2,
+      "context_score": -2.24,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 1.65,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 4.91,
+      "accepted": false,
+      "section_mentions": {
+        "methods": 2
+      },
+      "example_sentence": "When two or more antibiotics were resistant in a single profile, we used the relative risk for the antibiotic class Articles 636 www.thelancet.com Vol 399 February 12, 2022 that was the largest as the relative risk for calculating the PAF: Where R is prevalence of resistance, RR is relative risk, K is a pathogen with d 1, , n resistance profiles with resistance to at least one antibiotic class, and D is the antibiotic class in profile d with the highest relative risk (appendix pp 56 60)."
+    },
+    {
+      "token": "PF",
+      "canonical_token": "PF",
+      "frequency": 2,
+      "context_score": -3.08,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.35,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 4.77,
+      "accepted": false,
+      "section_mentions": {
+        "results": 2
+      },
+      "example_sentence": "TF PF iNTS typhoid fever, paratyphoid fever, and invasive non-typhoidal Salmonella spp."
+    },
+    {
+      "token": "NA",
+      "canonical_token": "NA",
+      "frequency": 2,
+      "context_score": -2.84,
+      "relation_hits": 0,
+      "section_diversity": 1,
+      "biomedical_score": 2.1,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 4.5,
+      "final_score": 4.76,
+      "accepted": false,
+      "section_mentions": {
+        "discussion": 2
+      },
+      "example_sentence": "NA not applicable."
+    },
+    {
+      "token": "AMR",
+      "canonical_token": "AMR",
+      "frequency": 149,
+      "context_score": -14.68,
+      "relation_hits": 0,
+      "section_diversity": 5,
+      "biomedical_score": 2.5,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": 1.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": -1.08,
+      "accepted": false,
+      "section_mentions": {
+        "other": 11,
+        "introduction": 25,
+        "methods": 12,
+        "results": 17,
+        "discussion": 45
+      },
+      "example_sentence": "Articles 642 www.thelancet.com Vol 399 February 12, 2022 Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe A Meticillin-resistant Staphylococcus aureus 5% 5 to 10% 10 to 20% 20 to 30% 30 to 40% 40 to 50% 50 to 60% 60 to 70% 70 to 80% 80% Percentage of isolates with resistance Raw data Modelled estimates (Figure 7 continues on next page) Articles www.thelancet.com Vol 399 February 12, 2022 643 Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe B Isoniazid and rifampicin co-resistant (excluding XDR) Mycobacterium tuberculosis 5% 5 to 10% 10 to 20% 20 to 30% 30 to 40% 40 to 50% 50 to 60% 60 to 70% 70 to 80% 80% Percentage of isolates with resistance Raw data Modelled estimates (Figure 7 continues on next page) Articles 644 www.thelancet.com Vol 399 February 12, 2022 Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe C Third-generation cephalosporin-resistant Escherichia coli 5% 5 to 10% 10 to 20% 20 to 30% 30 to 40% 40 to 50% 50 to 60% 60 to 70% 70 to 80% 80% Percentage of isolates with resistance Raw data Modelled estimates (Figure 7 continues on next page) Articles www.thelancet.com Vol 399 February 12, 2022 645 Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe D Carbapenem-resistant Acinetobacter baumannii 5% 5 to 10% 10 to 20% 20 to 30% 30 to 40% 40 to 50% 50 to 60% 60 to 70% 70 to 80% 80% Percentage of isolates with resistance Raw data Modelled estimates (Figure 7 continues on next page) Articles 646 www.thelancet.com Vol 399 February 12, 2022 Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe E Fluoroquinolone-resistant Escherichia coli 5% 5 to 10% 10 to 20% 20 to 30% 30 to 40% 40 to 50% 50 to 60% 60 to 70% 70 to 80% 80% Percentage of isolates with resistance Raw data Modelled estimates (Figure 7 continues on next page) Articles www.thelancet.com Vol 399 February 12, 2022 647 Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe F Carbapenem-resistant Klebsiella pneumoniae 5% 5 to 10% 10 to 20% 20 to 30% 30 to 40% 40 to 50% 50 to 60% 60 to 70% 70 to 80% 80% Percentage of isolates with resistance Raw data Modelled estimates (Figure 7 continues on next page) Articles 648 www.thelancet.com Vol 399 February 12, 2022 Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe Caribbean and central America Persian Gulf West AfricaBalkan Peninsula Eastern MediterraneanSoutheast Asia Northern Europe G Third-generation cephalosporin-resistant Klebsiella pneumoniae 5% 5 to 10% 10 to 20% 20 to 30% 30 to 40% 40 to 50% 50 to 60% 60 to 70% 70 to 80% 80% Percentage of isolates with resistance Raw data Modelled estimates Articles www.thelancet.com Vol 399 February 12, 2022 649 reduction in antibiotic prescribing and can reduce AMR emergence even for pathogens without vaccines.45 Third, reducing exposure to antibiotics unrelated to treating human disease is an important potential way to reduce risk."
+    },
+    {
+      "token": "UI",
+      "canonical_token": "UI",
+      "frequency": 8,
+      "context_score": -16.16,
+      "relation_hits": 0,
+      "section_diversity": 3,
+      "biomedical_score": 2.35,
+      "biomedical_sources": [
+        "scispacy",
+        "biobert"
+      ],
+      "pattern_score": -2.0,
+      "ambiguity_penalty": 0.0,
+      "web_score": 5.5,
+      "final_score": -5.71,
+      "accepted": false,
+      "section_mentions": {
+        "other": 1,
+        "results": 5,
+        "discussion": 2
+      },
+      "example_sentence": "Findings On the basis of our predictive statistical models, there were an estimated 4 95 million (3 62 6 57) deaths associated with bacterial AMR in 2019, including 1 27 million (95% UI 0 911 1 71) deaths attributable to bacterial AMR."
+    }
+  ]
+}

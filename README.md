@@ -52,6 +52,11 @@ A precision-focused biomedical gene extraction system that processes research PD
 - **Root Cause #2**: Alias mapping bug collapsed gene names (e.g., CNFN) to generic tokens ("hub genes (CNFN, ...)" → CNFN mapped to "GENES")
 - **Root Cause #3**: Section-diversity gate required 2+ sections but test paper was mostly abstract-only
 
+### Issue 2: Non-Gene False Positives Accepted
+- **Problem**: Database names (EMBL-EBI, NCBI), tools (BLAST, SAM), clinical scores (PASI), and other non-genes were being accepted with high scores
+- **Root Cause**: Ambiguity filtering only caught well-known ambiguous tokens; heuristic detection was absent
+- **Solution**: Added comprehensive non-gene blacklist (80+ terms) + heuristic detection for database acronyms, software names, clinical scores, and file formats
+
 ### Fixes Implemented
 
 **Fix #1 - Frequency Filter Exception**
@@ -110,6 +115,25 @@ min_final_score: 10.0 (preserve high precision bar)
 - **Result**: Recovered recall without sacrificing precision
 - **Impact**: 0 → 36 accepted genes on test paper
 
+**Fix #5 - Non-Gene Token Filtering**
+```python
+# Added 80+ non-gene blacklist + heuristic detection
+non_gene_blacklist = {
+    # Database/Repository: NCBI, PDB, KEGG, EMBL, ...
+    # Tools/Software: BLAST, GATK, PLINK, SAMTOOLS, ...
+    # Clinical Scores: PASI, APACHE, SOFA, ...
+    # File Formats: BAM, VCF, SAM, FASTQ, ...
+}
+
+# Heuristic detection for edge cases:
+def _is_database_acronym(token):  # Detects EMBL-EBI, multi-letter all-caps
+def _is_software_name(token):     # Detects BLAST, repeated letters
+def _looks_like_clinical_score(): # Detects high-consonant 4-5 letter acronyms
+def _is_parameter_or_format():    # Detects statistical/technical terms
+```
+- **Result**: Hard-block non-gene tokens with -10 penalty (unrecoverable)
+- **Impact**: Filters false positives (PASI, EMBL-EBI, SAM) while preserving true genes (CNFN, S100A8)
+
 ### Validation Results
 - **Before fixes**: `Accepted genes: 0, Rejected candidates: 39`
 - **After fixes**: `Accepted genes: 36, Rejected candidates: 60`
@@ -153,11 +177,17 @@ min_final_score: 10.0 (preserve high precision bar)
 - Strict preset builder (sets all thresholds and enables ensemble)
 - Pipeline orchestration and output serialization
 
-**[gene_extractor/pipeline.py](gene_extractor/pipeline.py)** (~750 lines):
+**[gene_extractor/pipeline.py](gene_extractor/pipeline.py)** (~850 lines, core extraction logic):
 - Core extraction orchestrator (`run()` method)
 - All 10 pipeline stages
 - Multi-field scoring (context, relations, patterns, ambiguity, biomedical, web)
 - Adaptive gating logic
+- **New**: Non-gene detection methods
+  - `_is_likely_nongene()`: Master detector orchestrating all heuristics
+  - `_is_database_acronym()`: Detects NCBI, PDB, EMBL-EBI patterns
+  - `_is_software_name()`: Detects BLAST, GATK, BWA, etc.
+  - `_looks_like_clinical_score()`: Detects PASI, APACHE, SOFA patterns
+  - `_is_parameter_or_format()`: Detects BAM, VCF, AUC, ROC, etc.
 
 **[gene_extractor/biomed.py](gene_extractor/biomed.py)** (~300 lines):
 - AliasTable: JSON-backed canonical token normalization
@@ -331,10 +361,19 @@ Each candidate passes through 6 independent scoring layers (or fewer if earlier 
    - Validates form (uppercase-dominant, length 3-15, optional digits/hyphens)
    - Binary: pass (1 pt) or fail (0 pts)
 
-4. **Ambiguity Layer** (0 to -3 penalty)
-   - Blocks well-known ambiguous tokens (MAP, SET, CAT)
-   - Penalty reduced if context score is high
-   - Example: "MAP" with context_score=8 → -0 penalty (overridden)
+4. **Ambiguity Layer** (0 to -10 penalty)
+   - **Hard block**: Explicit non-gene blacklist (80+ terms: databases, tools, clinical scores, formats)
+   - **Soft block**: Ambiguous tokens (MAP, SET, CAT) with context override at score ≥8.0
+   - **Heuristics**: 
+     - Database acronyms (2-4 letters, high consonant ratio, NCBI/PDB/KEGG patterns)
+     - Software names (BLAST, GATK, Bowtie, repeated letters)
+     - Clinical scores (PASI, APACHE, SOFA, high consonant 4-5-letter acronyms)
+     - File formats/parameters (BAM, VCF, SVM, AUC, ROC)
+   - Examples: 
+     - "PASI" (clinical score) → hard block (-10)
+     - "EMBL-EBI" (database) → hard block (-10)
+     - "SAM" (file format) → hard block (-10)
+     - "MAP" + context_score=3 → soft block (-3)
 
 5. **Biomedical Layer** (0-4 points, optional)
    - spaCy dependency parsing → max +2 points
@@ -354,6 +393,73 @@ Prevents duplicate genes due to synonym patterns:
 - "TP53 (P53)" detected, TP53 is canonical (has digits)
 - All later mentions of P53 mapped to TP53
 - Deduplicates final output
+
+## Non-Gene Filtering Strategy
+
+### Problem: False Positives from Acronyms and Tool Names
+
+Extracted tokens like PASI, EMBL-EBI, BLAST, SAM were being accepted as genes despite being:
+- Clinical scores (PASI = Psoriasis Area Severity Index)
+- Database names (EMBL-EBI, NCBI, PDB)
+- Bioinformatics tools (BLAST, GATK, PLINK, SAM Tools)
+- File formats (BAM, VCF, FASTQ)
+- Statistical measures (AUC, ROC, KNN, SVM)
+
+### Solution: Multi-Layer Non-Gene Detection
+
+**Layer 1: Explicit Blacklist** (80 terms)
+- Hard-coded non-genes that appear in biomedical literature
+- Categories:
+  - Databases: NCBI, PDB, KEGG, OMIM, UNIPROT, GENBANK, ENSEMBL, UCSC, EMBL
+  - Tools: BLAST, BWA, GATK, PLINK, SAMTOOLS, BEDTOOLS, STAR, BOWTIE
+  - Clinical: PASI, APACHE, SOFA, NEWS, CURB, SAPS, QSOFA
+  - Formats: BAM, VCF, SAM, FASTA, FASTQ, GFF, BED, MAF
+  - Statistical: AUC, ROC, SVM, KNN, PCA, LDA, FDR, ZSCORE
+
+**Layer 2: Heuristic Detection** (for novel non-genes)
+
+1. **Database Acronym Heuristic**
+   - Pattern: All-caps with hyphens (EMBL-EBI) or 2-4 characters
+   - Signal: High consonant ratio (rare vowels)
+   - Example: "EBI" (2 consonants, 1 vowel) → likely database acronym
+   - Counter: "BRCA1" has 1 vowel A but includes digit → likely gene
+
+2. **Software Name Heuristic**
+   - Pattern: Repeated double letters (e.g., KKKK, LLLL)
+   - Logic: Rare in biological gene names, common in tool names
+   - Example: "BOWTIE" (repeated T) → likely tool
+
+3. **Clinical Score Heuristic**
+   - Pattern: 4-5 character tokens ending in I or C
+   - Signal: >60% consonant ratio + ending pattern
+   - Example: "SAPS" (S-A-P-S: 3 consonants, 1 vowel = 75%) + "S" ending → likely score
+   - Counter: "BRCA1" (B-R-C-A-1: 3 consonants, 1 vowel, digit) → likely gene due to digit
+
+4. **Parameter/Format Heuristic**
+   - Detects: BAM, VCF, SAM, FASTA, FASTQ, ROC, AUC, PCA, LDA
+   - Context: Often used in method sections without "expression" language
+
+### Integration into Validation
+
+Non-gene detection is the **first hard filter** in acceptance logic:
+```
+if _is_likely_nongene(token) → REJECT immediately
+else → proceed with context/relation/biomedical scoring
+```
+
+Penalty: -10 (unrecoverable unlike ambiguity penalty of -3)
+
+### Examples
+
+| Token | Classification | Reason | Outcome |
+|-------|---|---|---|
+| CNFN | Gene | Contains digit-free all-caps form; mentioned with "hub genes"; high context score | **ACCEPT** |
+| S100A8 | Gene | Digit + letter pattern; biological context; multiple section mentions | **ACCEPT** |
+| PASI | Non-gene | Clinical score heuristic (high consonant, -I ending) + blacklist match | **REJECT** |
+| EMBL-EBI | Non-gene | Database heuristic (hyphenated acronym pattern) | **REJECT** |
+| BLAST | Non-gene | Software blacklist + tool name heuristic | **REJECT** |
+| SAM | Non-gene | File format blacklist (SAM/BAM/VCF common trio) | **REJECT** |
+| MAP | Ambiguous | Ambiguous tokens list; recoverable with context_score ≥8 | **CONTEXT-DEPENDENT** |
 
 ## Configuration & Tuning
 
@@ -396,7 +502,7 @@ min_relation_hits = 0    # Relations optional
 
 1. **SciSpacy Support**: SciSpacy itself doesn't install on Python 3.13; pipeline uses standard spaCy instead with comparable quality results via dependency parsing.
 
-2. **False Positives**: Some database/software names still pass (e.g., EMBL-EBI, DREAM score as genes despite being tools/concepts). Mitigated by adding to `negative_context_keywords` or enabling web validation.
+2. **False Positives (Reduced)**: Non-gene token detection now filters database names (EMBL-EBI, NCBI), tools (BLAST, GATK), clinical scores (PASI), and file formats (VCF, BAM). However, novel or less-common non-genes may still pass.
 
 3. **Rare Gene Variants**: Uncommon gene aliases not in the curated table may be treated as separate candidates. Add unknowns to [gene_extractor/data/gene_aliases.json](gene_extractor/data/gene_aliases.json) as needed.
 

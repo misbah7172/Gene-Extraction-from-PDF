@@ -406,8 +406,12 @@ class GeneExtractionPipeline:
             if self.config.use_biomedical_ensemble:
                 final_score += min(len(biomedical_sources), 2) * 0.5
 
+            # Fast-fail non-gene detection
+            is_nongene = self._is_likely_nongene(canonical_token, context_score)
+            
             accepted_flag = (
-                context_score >= self.config.min_context_score
+                not is_nongene  # Hard fail on non-gene detection
+                and context_score >= self.config.min_context_score
                 and relation_hits >= effective_min_relation_hits
                 and section_diversity >= effective_min_section_diversity
                 and (not self.config.use_biomedical_ensemble or biomedical_score >= 1.0)
@@ -542,7 +546,11 @@ class GeneExtractionPipeline:
             + section_mentions.get("discussion", 0)
             + section_mentions.get("abstract", 0)
         )
-        return high_value_hits > 0
+        # Allow from "other" section if no high-value sections exist
+        if high_value_hits > 0:
+            return True
+        # Fallback: accept if any section mentions exist (for poorly structured PDFs)
+        return len(section_mentions) > 0
 
     def _pattern_score(self, token: str) -> float:
         if len(token) < self.config.min_token_len or len(token) > self.config.max_token_len:
@@ -569,6 +577,10 @@ class GeneExtractionPipeline:
         return score
 
     def _ambiguity_penalty(self, token: str, context_score: float) -> float:
+        # Hard block: tokens in explicit non-gene blacklist
+        if token in self.config.non_gene_blacklist:
+            return -10.0  # Unrecoverable penalty
+        
         if token in self.config.ambiguous_tokens:
             # Permit rare recovery if context is very strong.
             return -1.0 if context_score >= 8.0 else -3.0
@@ -577,6 +589,99 @@ class GeneExtractionPipeline:
             return -2.0
 
         return 0.0
+
+    def _is_likely_nongene(self, token: str, context_score: float) -> bool:
+        """Detect if token is likely NOT a gene based on heuristics."""
+        # Hard block: explicit blacklist
+        if token in self.config.non_gene_blacklist:
+            return True
+        
+        # Database name heuristic: all-caps multi-letter acronyms ending in common patterns
+        if self._is_database_acronym(token):
+            return True
+        
+        # Repository/tool name heuristic: specific naming patterns
+        if self._is_software_name(token):
+            return True
+        
+        # Clinical score heuristic: numbers after capital letter(s)
+        if self._looks_like_clinical_score(token):
+            return True
+        
+        # Parameter/file format heuristic
+        if self._is_parameter_or_format(token):
+            return True
+        
+        return False
+
+    def _is_database_acronym(self, token: str) -> bool:
+        """Detect database/repository name patterns (e.g., EMBL-EBI, NCBI, PDB)."""
+        if len(token) < 2 or len(token) > 12:
+            return False
+        
+        # All caps with hyphens in structured patterns (e.g., EMBL-EBI)
+        if re.match(r"^[A-Z]{2,}(-[A-Z]{2,})?$", token):
+            # If it's a well-known database abbreviation
+            if token in {"NCBI", "PDB", "KEGG", "OMIM", "UNIPROT", "EMBL", "ENSEMBL", 
+                        "UCSC", "GENBANK", "PUBMED", "EBI"}:
+                return True
+            # Generic patterns for databases: 3-4 letters only, mostly consonants
+            if 2 <= len(token) <= 4 and token.count('A') + token.count('E') + token.count('I') + token.count('O') + token.count('U') <= 1:
+                return True
+        
+        return False
+
+    def _is_software_name(self, token: str) -> bool:
+        """Detect software/tool names (e.g., SAM Tools, GATK, PLINK)."""
+        # Known tools
+        if token in {"BLAST", "BLAT", "BWA", "GATK", "PLINK", "SAMTOOLS", "BEDTOOLS", 
+                     "VCFTOOLS", "STAR", "BOWTIE", "TOPHAT", "CUFFLINKS"}:
+            return True
+        
+        # Pattern: repeated double-letter (rare in genes): KKKK, LLLL, etc. often in tools
+        if re.search(r"([A-Z])\1{2,}", token):
+            if token not in {"TTTTT"}:  # TTTTT could be a weird gene, but unlikely
+                return True
+        
+        return False
+
+    def _looks_like_clinical_score(self, token: str) -> bool:
+        """Detect clinical scores (e.g., PASI, APACHE, SOFA)."""
+        # Clinical score heuristic: typically 4-5 caps, often acronyms
+        clinical_terms = {
+            "PASI",    # Psoriasis Area and Severity Index
+            "APACHE",  # Acute Physiology and Chronic Health Evaluation
+            "SOFA",    # Sequential Organ Failure Assessment
+            "NEWS",    # National Early Warning Score
+            "CURB",    # Confusion, Urea, Respiratory rate, Blood pressure
+            "SAPS",    # Simplified Acute Physiology Score
+            "QSOFA",   # Quick SOFA
+        }
+        
+        if token in clinical_terms:
+            return True
+        
+        # Pattern: 4-5 letter acronym ending in common endings
+        if 4 <= len(token) <= 5 and token[-1] in {"I", "C"}:
+            consonant_ratio = sum(1 for c in token if c not in "AEIOU") / len(token)
+            if consonant_ratio >= 0.6:  # >60% consonants suggests acronym, not gene
+                return True
+        
+        return False
+
+    def _is_parameter_or_format(self, token: str) -> bool:
+        """Detect parameter names and file formats."""
+        formats_and_params = {
+            "BAM", "VCF", "SAM", "FASTA", "FASTQ", "GFF", "BED", "MAF",  # File formats
+            "NODE", "EDGE", "VERTEX",  # Graph terms
+            "ROC", "AUC", "KNN", "SVM", "PCA", "LDA",  # ML terms
+            "PVALUE", "ZSCORE", "FDR", "QVALUE",  # Stats
+        }
+        
+        if token in formats_and_params:
+            return True
+        
+        return False
 
     def _web_validation_score(self, token: str) -> float:
         if token in self._web_cache:

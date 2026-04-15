@@ -106,3 +106,76 @@ class PipelineConfig:
             "YES",
         }
     )
+
+    # Non-gene token blacklist: database names, tools, clinical scores, repositories
+    non_gene_blacklist: Set[str] = field(
+        default_factory=lambda: {
+            # Database/Repository names
+            "EMBL",
+            "NCBI",
+            "PDB",
+            "KEGG",
+            "OMIM",
+            "UNIPROT",
+            "PUBMED",
+            "GENBANK",
+            "ENSEMBL",
+            "UCSC",
+            "UCSCGB",
+            "MYSQL",
+            "POSTGRES",
+            # Tools/Software
+            "BIOPYTHON",
+            "BLAT",
+            "BLAST",
+            "BEDTOOLS",
+            "SAMTOOLS",
+            "BWA",
+            "GATK",
+            "PLINK",
+            "VCFTOOLS",
+            "STAR",
+            # Clinical scores/parameters
+            "PASI",
+            "SCORE",
+            "INDEX",
+            "GRADE",
+            "STAGE",
+            "LEVEL",
+            "SCALE",
+            # File formats
+            "BAM",
+            "VCF",
+            "SAM",
+            "FASTA",
+            "FASTQ",
+            "GFF",
+            "BED",
+            "MAF",
+            # Concepts/Abstract terms
+            "PPI",
+            "SNP",
+            "CNV",
+            "SV",
+            "QC",
+            "ROC",
+            "AUC",
+            "KNN",
+            "SVM",
+            "COX",
+            # Network/Graph terms
+            "NODE",
+            "EDGE",
+            "CLUSTER",
+            "MODULE",
+            "COMMUNITY",
+            # Statistical terms
+            "PVALUE",
+            "ZSCORE",
+            "FDR",
+            "MEAN",
+            "MEDIAN",
+            "STD",
+            "VAR",
+        }
+    )
